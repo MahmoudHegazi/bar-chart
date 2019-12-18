@@ -165,12 +165,8 @@ def word():
     x.back(4)
     x.right(5)
     x.back(5)
-    x.right(10)
-    x.back(4)
-    x.right(10)
-    x.back(4)
-    x.right(10)
-    x.back(4)
+    x.right(30)
+    x.back(12)
     x.right(10)
     x.back(2)
     x.right(20)
@@ -256,7 +252,8 @@ def bot():
     t.right(40)
     t.back(10)
     t.forward(10)
-    t.left(80)
+    t.left(40)
+    t.left(40)
     t.back(10)
     t.forward(10)
     t.right(40)
@@ -266,6 +263,3 @@ def bot():
     if x == "y":
         return "Thanks"
     else:
-        y.home()
-        bot()
-bot()
