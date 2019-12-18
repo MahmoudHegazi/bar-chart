@@ -1,8 +1,14 @@
 import turtle
+import random
 
 t = turtle.Turtle()
-sales_5_years_precentage = [10, 100, 30, 50, 10]
 
+def myRandom():
+	mylist = []
+	for side in range(5):
+		x = str(random.randint(3,10)) + str(random.randint(0,9))
+		mylist.append(x)
+	return mylist
 
 def word():    
     x = turtle.Turtle()
@@ -236,13 +242,13 @@ def bot():
     t.penup()
     t.forward(50)
     t.pendown()
-    for side in sales_5_years_precentage:
+    for side in myRandom():
         t.left(90)
-        t.forward(side)             
+        t.forward(int(side))             
         t.right(90)
         t.forward(20)
         t.right(90)
-        t.forward(side)             
+        t.forward(int(side))
         t.left(90)
         t.penup()
         t.forward(30)
@@ -252,8 +258,7 @@ def bot():
     t.right(40)
     t.back(10)
     t.forward(10)
-    t.left(40)
-    t.left(40)
+    t.left(80)
     t.back(10)
     t.forward(10)
     t.right(40)
@@ -262,4 +267,6 @@ def bot():
     x = input("Do You Want Close App(Y/N)")
     if x == "y":
         return "Thanks"
-    else:
+    else:        
+        bot()
+bot()
