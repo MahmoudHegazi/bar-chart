@@ -1,9 +1,9 @@
 # bar-chart
-using python to draw a single Bar Chart 
+ using python to draw a single Bar Chart 
 
 
 
-video:
+# video:
 
-<iframe width="420" height="345" src="https://www.youtube.com/embed/lJ8wfBNMUUA">
-</iframe>
+ <a href="https://www.youtube.com/embed/lJ8wfBNMUUA">Watch what app do</a>
+
